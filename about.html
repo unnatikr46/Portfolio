@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio - About</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        /* Custom styles for animations */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        .animate-fade-in-up {
+            animation: fadeInUp 1s ease-out forwards;
+        }
+    </style>
+</head>
+<body class="bg-gray-900 font-sans leading-normal tracking-normal text-gray-100">
+    <!-- Sticky Header -->
+    <header class="sticky top-0 z-50 flex items-center justify-between flex-wrap bg-gray-800 p-6">
+        <div class="flex items-center flex-shrink-0 mr-6 animate-fade-in-up">
+            <span class="font-semibold text-xl tracking-tight">My Portfolio</span>
+        </div>
+        <nav class="w-full block flex-grow lg:flex lg:items-center lg:w-auto animate-fade-in-up">
+            <ul class="flex space-x-4">
+                <li><a href="index.html" class="block mt-4 lg:inline-block lg:mt-0 text-gray-300 hover:text-white">Home</a></li>
+                <li><a href="about.html" class="block mt-4 lg:inline-block lg:mt-0 text-gray-300 hover:text-white">About</a></li>
+                <li><a href="contact.html" class="block mt-4 lg:inline-block lg:mt-0 text-gray-300 hover:text-white">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="p-10">
+        <section class="text-center mb-10 animate-fade-in-up">
+            <h1 class="text-4xl font-bold mb-4">About Me</h1>
+            <img src="./ukv.jpg" alt="Your Picture" class="rounded-full w-48 h-48 mx-auto shadow-lg mb-6">
+            <p>I am passionate about coding and problem-solving. With a strong foundation in HTML/CSS, JavaScript, React, and Tailwind CSS, I've developed innovative web applications that solve real-world problems. Let's connect and create something amazing together!</p>
+        </section>
+
+        <section class="mb-10 animate-fade-in-up">
+            <h2 class="text-3xl font-bold mb-6 text-center">Skills & Achievements</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="text-center">
+                    <i class="fas fa-code fa-3x mb-4"></i>
+                    <h3 class="text-2xl font-bold mb-2">Web Development</h3>
+                    <p>Building responsive, intuitive web interfaces that enhance user experiences.</p>
+                </div>
+                <div class="text-center">
+                    <i class="fas fa-cog fa-3x mb-4"></i>
+                    <h3 class="text-2xl font-bold mb-2">Problem-Solving</h3>
+                    <p>Applying logical thinking and algorithmic skills to devise efficient solutions.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="fixed inset-x-0 bottom-0 p-4 bg-gray-800 text-center">
+        <a href="https://linkedin.com/in/unnati-kumar-verma" target="_blank">LinkedIn</a>
+        <a href="https://leetcode.com/UnnatiKumarVerma" target="_blank" class="mx-4">LeetCode</a>
+        <a href="https://github.com/Unnatikr" target="_blank">GitHub</a>
+    </footer>
+</body>
+</html>

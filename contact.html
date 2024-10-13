@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio - Contact Us</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        /* Custom styles for animations */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        .animate-fade-in-up {
+            animation: fadeInUp 1s ease-out forwards;
+        }
+    </style>
+</head>
+<body class="bg-gray-900 font-sans leading-normal tracking-normal text-gray-100">
+    <!-- Fixed Header -->
+    <header class="fixed top-0 left-0 w-full flex items-center justify-between flex-wrap bg-gray-800 p-6 z-50">
+        <div class="flex items-center flex-shrink-0 text-white mr-6 animate-fade-in-up">
+            <span class="font-semibold text-xl tracking-tight">My Portfolio</span>
+        </div>
+        <nav class="w-full block flex-grow lg:flex lg:items-center lg:w-auto animate-fade-in-up">
+            <ul class="flex space-x-4">
+                <li><a href="index.html" class="block mt-4 lg:inline-block lg:mt-0 text-gray-300 hover:text-white">Home</a></li>
+                <li><a href="about.html" class="block mt-4 lg:inline-block lg:mt-0 text-gray-300 hover:text-white">About</a></li>
+                <li><a href="contact.html" class="block mt-4 lg:inline-block lg:mt-0 text-gray-300 hover:text-white">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="p-10 pt-24 bg-gray-900 text-gray-100"> <!-- Adjusted padding-top to accommodate fixed header -->
+        <section class="text-center mb-10 animate-fade-in-up">
+            <h1 class="text-4xl font-bold mb-4">Contact Us</h1>
+            <img src="./ukv.jpg" alt="Your Picture" class="rounded-full w-48 h-48 mx-auto shadow-lg mb-6">
+            <p>Feel free to reach out to me through any of the platforms below. I'd love to hear from you!</p>
+        </section>
+
+        <section class="max-w-md mx-auto animate-fade-in-up">
+            <form action="#" method="post" class="space-y-4">
+                <label for="name" class="block text-gray-300 text-sm font-bold mb-2">Name:</label>
+                <input type="text" id="name" name="name" required class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-300 leading-tight focus:outline-none focus:shadow-outline">
+
+                <label for="email" class="block text-gray-300 text-sm font-bold mb-2">Email:</label>
+                <input type="email" id="email" name="email" required class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-300 leading-tight focus:outline-none focus:shadow-outline">
+
+                <label for="message" class="block text-gray-300 text-sm font-bold mb-2">Message:</label>
+                <textarea id="message" name="message" rows="5" required class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-300 leading-tight focus:outline-none focus:shadow-outline"></textarea>
+
+                <button type="submit" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="fixed inset-x-0 bottom-0 p-4 bg-gray-800 text-center">
+        <a href="https://linkedin.com/in/unnati-kumar-verma" target="_blank">LinkedIn</a>
+        <a href="https://leetcode.com/UnnatiKumarVerma" target="_blank" class="mx-4">LeetCode</a>
+        <a href="https://github.com/Unnatikr" target="_blank">GitHub</a>
+    </footer>
+</body>
+</html>
